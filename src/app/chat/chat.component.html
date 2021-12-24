@@ -1,0 +1,50 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" 
+            id="modal-basic-title">
+            Students
+        </h4>
+        <button type="button" class="close"
+                aria-label="Close" (click)=
+                "modal.dismiss('Cross click')">
+  
+            <span aria-hidden="true">
+                ×
+            </span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="studentName">
+                    Student Name
+                </label>
+                <div class="input-group">
+                    <input id="studentName" 
+                        class="form-control" 
+                        placeholder="enter name" 
+                        [formControl]="studentName"
+                        (keyup.enter)="modal.close('Save click')"
+                        #focusInput
+                        >
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" 
+            class="btn btn-outline-dark" 
+            (click)="modal.close('Save click')">
+            Save
+        </button>
+    </div>
+</ng-template>
+  
+<button class="btn btn-lg btn-outline-primary" 
+    (click)="open(content)">
+    update students
+</button>
+
+<div>
+    <div *ngFor="let name of students">{{name}}</div>
+</div>

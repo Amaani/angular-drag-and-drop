@@ -1,0 +1,27 @@
+.mat-card {
+    background-color: grey;
+    margin-bottom: 5px;
+    height: 50px;
+}
+
+div div {
+    background-color: lightblue;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.cdk-drag-placeholder {
+    opacity: 0.5;
+}
+
+b {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 2px;
+    border-radius: 5px;
+
+}
+
+.container {
+    font-size: larger;
+}
