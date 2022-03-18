@@ -15,7 +15,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     AppComponent,
     SortListComponent,
     ChatComponent,
-    SpinnerComponent
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,

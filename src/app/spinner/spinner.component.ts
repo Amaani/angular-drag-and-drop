@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
@@ -7,6 +7,8 @@ import * as d3 from 'd3';
   styleUrls: ['./spinner.component.css']
 })
 export class SpinnerComponent implements OnInit {
+  @Input() text = "default text";
+
   private data = [
     {"Framework": "Vue", "Stars": "166443", "Released": "2014"},
     {"Framework": "React", "Stars": "150793", "Released": "2013"},
